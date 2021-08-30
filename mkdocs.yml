@@ -1,0 +1,150 @@
+site_name: "ParcMaths"
+site_url: https://parc-nsi.github.io/premiere/
+repo_url: https://github.com/parc-nsi/premiere
+edit_uri: tree/main/docs/
+site_description: "Ressources pour l'enseignement des  mathématiques   Lycée  du  Parc  à Lyon " 
+
+
+#use_directory_urls: true
+#voir https://www.mkdocs.org/user-guide/configuration/#docs_dir
+
+nav:
+  - Présentation: index.md
+  - Automatismes: 
+    - Première: automatismes/premiere/automatismes_premiere.md
+    - Maths complémentaires: automatismes/maths_complementaires/automatismes_maths_complementairese.md
+  - Grand Oral: grand_oral/grand_oral.md
+  
+    
+    
+    
+
+
+
+theme:
+  name: material
+  palette:                        # Palettes de couleurs jour/nuit
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+          icon: material/weather-night
+          name: Passer au mode jour
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+          icon: material/weather-sunny
+          name: Passer au mode nuit
+  custom_dir: overrides/
+  font: false
+  language: fr
+  logo: assets/logo-parc.png
+  favicon: assets/logo-parc.png
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - header.autohide
+    - navigation.tabs.sticky
+    - navigation.sections
+
+
+markdown_extensions:
+  - meta
+  - abbr
+  - def_list     # Les listes de définition.
+  - attr_list    # Un peu de CSS et des attributs HTML.
+  - admonition   # Blocs colorés  !!! info "ma remarque"
+  - pymdownx.details  #   qui peuvent se plier/déplier.  
+  - footnotes    # Notes[^1] de bas de page.  [^1]: ma note.
+  - pymdownx.caret  # Passage ^^souligné^^ ou en ^exposant^.
+  - pymdownx.mark  # Passage ==surligné==.
+  - pymdownx.tilde   # Passage ~~barré~~ ou en ~indice~.
+  - pymdownx.snippets   # Inclusion de fichiers externe.
+  - pymdownx.highlight:  # Coloration syntaxique du code
+      #linenums: true
+  - pymdownx.tasklist:  # Cases à cocher  - [ ]  et - [x]
+      custom_checkbox:    false   #   avec cases d'origine
+      clickable_checkbox: true    #   et cliquables.
+  - pymdownx.inlinehilite # pour  `#!python  <python en ligne>`
+  - pymdownx.superfences: # Imbrication de blocs.
+      preserve_tabs: true
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format        
+  - pymdownx.keys   # Touches du clavier.  ++ctrl+d++
+  - pymdownx.tabbed
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.emoji:   # Émojis  :boom:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+      smart_dollar: false
+  - toc:
+      permalink: ⚓︎
+      toc_depth: 3
+  - mkdocs_graphviz  #https://gitlab.com/rodrigo.schwencke/mkdocs-graphviz
+
+
+plugins:
+  - search
+  - kroki
+  - macros:
+      verbose: True
+      include_dir: include # voir https://mkdocs-macros-plugin.readthedocs.io/en/latest/advanced/#changing-the-directory-of-the-includes
+  - mermaid2
+  - mkdocs-jupyter:
+      include_source: True
+
+  
+
+extra:
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:admin@frederic-junier.org
+      name: Mail
+
+    - icon: fontawesome/brands/github
+      link: https://github.com/parc-nsi/premiere
+      name: Dépôt git
+
+
+    - icon: mattermost/mattermost
+      link: https://fjunier.fr/login
+      name: ProfJunierMost
+
+    - icon: fontawesome/solid/university
+      link: https://lyceeduparc.fr/ldp/
+      name: Lycée du Parc
+
+    
+
+  raw_url: https://parc-nsi.github.io/premiere/-/raw/master/docs/
+  io_url: https://parc-nsi.github.io/premiere/
+  
+
+
+
+copyright:  Sous licence CC BY-NC-SA 4.0
+
+extra_javascript:
+  - javascripts/config.js
+  #- javascripts/pyodid.js
+  - javascripts/interpreter.js
+  #- javascripts/repl.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  #- https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.js    #chargé dans l'extension du template html overrides/main.html
+
+extra_css:
+  - stylesheets/extra.css
+  - xtra/stylesheets/pyoditeur.css
+ 
