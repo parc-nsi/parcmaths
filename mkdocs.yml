@@ -113,7 +113,7 @@ extra:
       name: Mail
 
     - icon: fontawesome/brands/github
-      link: https://github.com/parc-nsi/premiere
+      link: https://github.com/parc-nsi/parcmaths
       name: Dépôt git
 
 
@@ -127,8 +127,8 @@ extra:
 
     
 
-  raw_url: https://parc-nsi.github.io/premiere/-/raw/master/docs/
-  io_url: https://parc-nsi.github.io/premiere/
+  raw_url: https://github.com/parc-nsi/parcmaths/-/raw/master/docs/
+  io_url: https://github.com/parc-nsi/parcmaths
   
 
 
