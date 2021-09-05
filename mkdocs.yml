@@ -12,8 +12,9 @@ nav:
   - Présentation: index.md
   - Automatismes: 
     - Première: automatismes/premiere/automatismes_premiere.md
-    - Maths complémentaires: automatismes/maths_complementaires/automatismes_maths_complementairese.md
+    - Maths complémentaires: automatismes/maths_complementaires/automatismes_maths_complementaires.md
   - Grand Oral: grand_oral/grand_oral.md
+  - Enigmes: enigmes/enigmes.md
   
     
     
