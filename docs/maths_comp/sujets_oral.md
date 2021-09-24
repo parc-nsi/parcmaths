@@ -5,9 +5,9 @@ layout: parc
 
 
 
-!!! info Sujet 1
+!!! info "Sujet 1"
 
-    Le format A4.  
+    Pourquoi le format A4 ?
 
 
     __Ressource :__
@@ -18,7 +18,7 @@ layout: parc
 
 
 
-!!! info Sujet 2
+!!! info "Sujet 2"
 
     La place des femmes en sciences à travers l'exemple de Sophie Germain mathématicienne au début du XIX ème siècle.
 
@@ -30,7 +30,7 @@ layout: parc
 
 
 
-!!! info Sujet 3
+!!! info "Sujet 3"
 
     Isaac Newton  et l'invention du calcul différentiel  
 
@@ -41,7 +41,7 @@ layout: parc
 
 
 
-!!! info Sujet 4
+!!! info "Sujet 4"
 
     Les modèles d'évolution de population de Malthus et Verhulst.
     
@@ -50,7 +50,7 @@ layout: parc
     *  document d'accompagnement d'enseignement scientifique <https://www.pedagogie.ac-nantes.fr/medias/fichier/ra20-lycee-g-t-es-sous-theme-3-4-modeles-demographiques-1238222_1581925547124-pdf?ID_FICHE=539929&INLINE=FALSE>
 
 
-!!! info Sujet 5
+!!! info "Sujet 5"
 
     Suites géométrique et croissance exponentielle, "la légende de Sissa".
     
@@ -61,7 +61,7 @@ layout: parc
     * un pdf : <https://hist-math.fr/users/Histoires/Arithmetique/sissa_double.pdf>
 
 
-!!! info Sujet 6
+!!! info "Sujet 6"
 
     Moyennes arithmétique et géométrique.
     
@@ -74,7 +74,7 @@ layout: parc
 
 
 
-!!! info Sujet 7
+!!! info "Sujet 7"
 
     Archimède et la quadrature de la parabole.    
     
@@ -93,7 +93,7 @@ layout: parc
 
 
 
-!!! info Sujet 8
+!!! info "Sujet 8"
 
     Le modèle SIR de propagation d'une épidémie
     
@@ -104,7 +104,7 @@ layout: parc
 
 
 
-!!! info Sujet 9
+!!! info "Sujet 9"
 
     Calculer le coût d'un crédit immobilier.
 
@@ -112,4 +112,14 @@ layout: parc
 
     * Un article sur le site [Culture Maths](https://culturemath.ens.fr/thematiques/concours-d-enseignement/les-cles-du-credit)
 
+
+
+!!! info "Sujet 10"
+
+    Probabilités et système électoral : le paradoxe de Condorcet.
+
+    __Ressources :__
+
+    * Sur le paradoxe de Condorcet : <https://scienceetonnante.com/2012/04/23/le-paradoxe-de-condorcet/>
+    * Sur le théorème d'Arrow : <http://images.math.cnrs.fr/A-vote.html>
     
