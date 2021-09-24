@@ -13,7 +13,10 @@ nav:
   - Automatismes: 
     - Première: automatismes/premiere/automatismes_premiere.md
     - Maths complémentaires: automatismes/maths_complementaires/automatismes_maths_complementaires.md
-  - Grand Oral: grand_oral/grand_oral.md
+  - Oral: 
+    - Sujets d'oral en première: premiere/sujets_oral.md
+    - Sujets d'oral en terminale: maths_comp/sujets_oral.md
+    - Grand oral: grand_oral/grand_oral.md
   - Enigmes: enigmes/enigmes.md
   
     
