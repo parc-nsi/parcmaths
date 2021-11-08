@@ -123,3 +123,11 @@ layout: parc
     * Sur le paradoxe de Condorcet : <https://scienceetonnante.com/2012/04/23/le-paradoxe-de-condorcet/>
     * Sur le théorème d'Arrow : <http://images.math.cnrs.fr/A-vote.html>
     
+
+!!! info "Sujet 11"
+
+    Adolphe Quételet et l'homme moyen, la naissance de la statistique moderne
+
+    __Ressources :__ 
+
+    * _Le théorème d'Hypocrite : une histoire de la manipulation par les chiffres de Pythagore  au Covid-19_ de Antoine Houlou-Garcia et Thierry Maugenest, disponible au CDI

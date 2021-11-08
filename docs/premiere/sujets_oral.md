@@ -175,3 +175,12 @@ layout: parc
 
     * un podcast : <https://hist-math.fr/heron-auto#/>
     * un pdf : <https://hist-math.fr/users/Histoires/Analyse/heron_double.pdf>
+
+
+!!! info "Sujet 16"
+
+    Adolphe Quételet et l'homme moyen, la naissance de la statistique moderne
+
+    __Ressources :__ 
+
+    * _Le théorème d'Hypocrite : une histoire de la manipulation par les chiffres de Pythagore  au Covid-19_ de Antoine Houlou-Garcia et Thierry Maugenest, disponible au CDI
