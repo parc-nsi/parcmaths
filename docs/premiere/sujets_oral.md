@@ -184,3 +184,15 @@ layout: parc
     __Ressources :__ 
 
     * _Le théorème d'Hypocrite : une histoire de la manipulation par les chiffres de Pythagore  au Covid-19_ de Antoine Houlou-Garcia et Thierry Maugenest, disponible au CDI
+
+
+!!! info "Sujet 17"
+
+    Peut-on mesurer l'infini et comparer deux infinis ? Par exemple l'ensemble des entiers relatifs est-il plus grand que l'ensemble des entiers naturels ?
+
+
+    __Ressources :__
+
+    ??? video
+
+        <iframe width="1008" height="567" src="https://www.youtube.com/embed/1YrbUBSo4Os" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
