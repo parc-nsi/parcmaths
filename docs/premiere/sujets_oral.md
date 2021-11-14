@@ -183,7 +183,7 @@ layout: parc
 
     __Ressources :__ 
 
-    * _Le théorème d'Hypocrite : une histoire de la manipulation par les chiffres de Pythagore  au Covid-19_ de Antoine Houlou-Garcia et Thierry Maugenest, disponible au CDI
+    * _Le théorème d'Hypocrite : une histoire de la manipulation par les chiffres de Pythagore  au Covid-19_ de Antoine Houlou-Garcia et Thierry Maugenest, chapitre 4,  disponible au CDI
 
 
 !!! info "Sujet 17"
@@ -196,3 +196,14 @@ layout: parc
     ??? video
 
         <iframe width="1008" height="567" src="https://www.youtube.com/embed/1YrbUBSo4Os" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+!!! info "Sujet 18"
+
+    Peut-on utiliser le calcul des probabilités pour juger les hommes ? Le cas de l'affaire Dreyfus.
+
+    __Ressources :__ 
+
+    * _Le théorème d'Hypocrite : une histoire de la manipulation par les chiffres de Pythagore  au Covid-19_ de Antoine Houlou-Garcia et Thierry Maugenest, chapitre 6,  disponible au CDI
+    * <http://images.math.cnrs.fr/Des-mathematiciens-dans-l-affaire-Dreyfus>
+    * Rapport de MM. Darboux, Appel, Poincaré sur l'affaire Dreyfus <https://www.maths.ed.ac.uk/~v1ranick/dreyfus/dreyfusfrench.pdf>   ➡️   Lire les pages 2 et 3, lorque Poincaré parle de 4 coincidences sur 26 il sous-entend au moins 4 coincidences sur 26 (lien avec la loi binomiale)
