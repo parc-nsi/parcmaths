@@ -12,7 +12,7 @@ layout: parc
 
 
 
-!!! success "Code Puzzle"
+??? success "Code Puzzle"
 
     * [Permutation de deux variables](https://www.codepuzzle.io/p/KMSH)
     
