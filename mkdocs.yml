@@ -17,6 +17,8 @@ nav:
     - Sujets d'oral en première: premiere/sujets_oral.md
     - Sujets d'oral en terminale: maths_comp/sujets_oral.md
     - Grand oral: grand_oral/grand_oral.md
+  - Python:
+    - Première: python/python_premiere.md
   - Enigmes: enigmes/enigmes.md
   
     
