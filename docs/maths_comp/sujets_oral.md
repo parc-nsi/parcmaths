@@ -154,3 +154,21 @@ layout: parc
     * _Le théorème d'Hypocrite : une histoire de la manipulation par les chiffres de Pythagore  au Covid-19_ de Antoine Houlou-Garcia et Thierry Maugenest, chapitre 6,  disponible au CDI
     * <http://images.math.cnrs.fr/Des-mathematiciens-dans-l-affaire-Dreyfus>
     * Rapport de MM. Darboux, Appel, Poincaré sur l'affaire Dreyfus <https://www.maths.ed.ac.uk/~v1ranick/dreyfus/dreyfusfrench.pdf>   ➡️   Lire les pages 2 et 3, lorque Poincaré parle de 4 coincidences sur 26 il sous-entend au moins 4 coincidences sur 26 (lien avec la loi binomiale)
+
+
+!!! info "Sujet 14"
+
+    Comment calcule-t-on _l'espérance de vie_ ? 
+
+    __Ressources :__ 
+
+    * Un article : <http://images.math.cnrs.fr/Esperance-de-vie.html>
+
+!!! info "Sujet 15"
+
+    Les chiffres peuvent-ils mentir  ? Des précautions  à prendre dans l'analyse statistique avec des exemples de corrélation sans causalité et le paradoxe de Simpson.
+
+    __Ressources :__ 
+
+    * _Le théorème d'Hypocrite : une histoire de la manipulation par les chiffres de Pythagore  au Covid-19_ de Antoine Houlou-Garcia et Thierry Maugenest, chapitre 6,  disponible au CDI, article sur le paradoxe de Simpson entre les pages 281 et 290 
+    * Des exemples surprenants de corrélation : <https://tylervigen.com/spurious-correlations>
