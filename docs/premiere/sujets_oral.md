@@ -224,4 +224,5 @@ layout: parc
     __Ressources :__ 
 
     * _Le théorème d'Hypocrite : une histoire de la manipulation par les chiffres de Pythagore  au Covid-19_ de Antoine Houlou-Garcia et Thierry Maugenest, chapitre 6,  disponible au CDI, article sur le paradoxe de Simpson entre les pages 281 et 290 
+    * Un article de Jean-Paul Delahaye sur le paradoxe de Simson : <https://www.cristal.univ-lille.fr/~jdelahay/pls/236.pdf>
     * Des exemples surprenants de corrélation : <https://tylervigen.com/spurious-correlations>
