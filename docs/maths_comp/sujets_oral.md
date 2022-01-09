@@ -173,3 +173,13 @@ layout: parc
     * _Le théorème d'Hypocrite : une histoire de la manipulation par les chiffres de Pythagore  au Covid-19_ de Antoine Houlou-Garcia et Thierry Maugenest, chapitre 6,  disponible au CDI, article sur le paradoxe de Simpson entre les pages 281 et 290 
     * Un article de Jean-Paul Delahaye sur le paradoxe de Simson : <https://www.cristal.univ-lille.fr/~jdelahay/pls/236.pdf>
     * Des exemples surprenants de corrélation : <https://tylervigen.com/spurious-correlations>
+
+
+!!! info "Sujet 16"
+
+    Mon test est positif, quelle est la probablité que je sois malade ?
+
+    __Ressources :__
+
+    * Un article sur le site Images des Maths : <http://images.math.cnrs.fr/Lire-les-statistiques-cela-s-apprend.html>
+    * Un article plus poussé sur le site Culture Maths : <https://culturemath.ens.fr/thematiques/concours-d-enseignement/les-probabilites-ont-la-cote>
