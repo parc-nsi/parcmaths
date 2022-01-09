@@ -230,7 +230,7 @@ layout: parc
 
 !!! info "Sujet 21"
 
-    Mon test est positif, quelle est la probablité que je sois malade ?
+    Mon test est positif, quelle est la probabilité que je sois malade ?
 
     __Ressources :__
 
