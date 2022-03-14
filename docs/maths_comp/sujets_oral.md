@@ -183,3 +183,15 @@ layout: parc
 
     * Un article sur le site Images des Maths : <http://images.math.cnrs.fr/Lire-les-statistiques-cela-s-apprend.html>
     * Un article plus poussé sur le site Culture Maths : <https://culturemath.ens.fr/thematiques/concours-d-enseignement/les-probabilites-ont-la-cote>
+
+
+!!! info "Sujet 17"
+
+    Probabilités et système électoral : Existe-t-il un meilleur mode de scrutin en démocratie ?
+
+    __Ressources :__
+
+    * Deux conférences de Jean-Baptiste Aubin sur le théorème d'Arrow :
+        *  <https://tube.ac-lyon.fr/w/bhaFdbxq5LULDraG8ZhDAQ>
+        *  <https://tube.ac-lyon.fr/w/jkd5mGGquXPPMGyktvrV8X>
+    
