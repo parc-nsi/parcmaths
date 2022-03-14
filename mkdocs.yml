@@ -106,7 +106,6 @@ plugins:
   - macros:
       verbose: True
       include_dir: include # voir https://mkdocs-macros-plugin.readthedocs.io/en/latest/advanced/#changing-the-directory-of-the-includes
-  - mermaid2
   - mkdocs-jupyter:
       include_source: True
 
@@ -123,11 +122,7 @@ extra:
       name: Dépôt git
 
 
-    - icon: mattermost/mattermost
-      link: https://fjunier.fr/login
-      name: ProfJunierMost
-
-    - icon: fontawesome/solid/university
+    - icon: fontawesome/solid/school
       link: https://lyceeduparc.fr/ldp/
       name: Lycée du Parc
 
