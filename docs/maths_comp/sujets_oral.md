@@ -194,4 +194,4 @@ layout: parc
     * Deux conférences de Jean-Baptiste Aubin sur le théorème d'Arrow :
         *  <https://tube.ac-lyon.fr/w/bhaFdbxq5LULDraG8ZhDAQ>
         *  <https://tube.ac-lyon.fr/w/jkd5mGGquXPPMGyktvrV8X>
-    
+      
