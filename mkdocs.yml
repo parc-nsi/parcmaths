@@ -1,5 +1,5 @@
 site_name: "ParcMaths"
-site_url: https://parc-nsi.github.io/parcmaths
+site_url: https://parc-nsi.github.io/parcmaths/
 repo_url: https://parc-nsi.github.io/parcmaths
 edit_uri: tree/main/docs/
 site_description: "Ressources pour l'enseignement des  mathématiques   Lycée  du  Parc  à Lyon "
@@ -65,7 +65,7 @@ markdown_extensions:
   - pymdownx.tilde # Passage ~~barré~~ ou en ~indice~.
   - pymdownx.snippets # Inclusion de fichiers externe.
   - pymdownx.highlight:# Coloration syntaxique du code
-      #linenums: true
+    #linenums: true
   - pymdownx.tasklist: # Cases à cocher  - [ ]  et - [x]
       custom_checkbox: false #   avec cases d'origine
       clickable_checkbox: true #   et cliquables.
