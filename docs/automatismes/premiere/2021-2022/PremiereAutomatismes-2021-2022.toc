@@ -1,0 +1,7 @@
+\babel@toc {french}{}\relax 
+\beamer@sectionintoc {1}{Calcul}{2}{0}{1}
+\beamer@sectionintoc {2}{Second degré}{6}{0}{2}
+\beamer@sectionintoc {3}{Dérivation locale}{13}{0}{3}
+\beamer@sectionintoc {4}{Dérivation Globale}{18}{0}{4}
+\beamer@sectionintoc {5}{Suites numériques}{22}{0}{5}
+\beamer@sectionintoc {6}{Application du produit scalaire}{25}{0}{6}
