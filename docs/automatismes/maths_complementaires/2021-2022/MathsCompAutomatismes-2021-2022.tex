@@ -26,6 +26,9 @@
 \usepackage{url}
 \usepackage[np]{numprint}
 
+%%%Tableaux%%
+\usepackage{tabularx}
+
 
 %%%%%%%%%%%%Là encore il y a de grosses différences entre le monde anglo-saxon et les francophones.Le séparateur des décimales est un point en anglais et une virgule en français. Leséparateur des milliers est une virgule en anglais et une espace insécable en français. Ilest préférable dutiliser le package numprint (\usepackage{numprint}) qui associé àfrenchb produira la bonne typographie.
 %123456789 = 123456789 \numprint{123456789} = 123 456 789  \numprint{3,1415926535897932384626} = 3,141 592 653 589 793 238 462 6  \numprint{12.34} = 12,34  En plus tu peux préciser les unités de cette façon : \numprint[kg]{12.34} = 12,34 kg ou encore \numprint[\degres C]{22} = 22°C Si tu veux utiliser le raccourci \np{} au lieu de \numprint{}, il te faut charger le package de cette façon : \usepackage[np]{numprint}
@@ -700,6 +703,18 @@ Par lecture graphique, déterminer $f'(2)$, $f(2)$, $f'(4)$, $f(4)$ et des équa
 \end{frame}
 
 
+\begin{frame}
+\automatisme{dérivation}
+Déterminer une expression de la fonction dérivée de la fonction $f$ définie et dérivable sur $\Interoo{-1}{+\infty}$ telle que pour tout réel $x>-1$ :
+
+\begin{equation*}
+f(x)=\ln\left(\frac{\text{e}^{x}}{1+x}\right)
+\end{equation*}
+
+\end{frame}
+
+
+
 \section{Convexité}
 
 
@@ -724,6 +739,29 @@ On note $\mathcal{C}_{f}$ sa courbe dans un repère du plan.
 
 
 \end{frame}
+
+
+\section{Primitives}
+
+\label{primitives}
+
+
+\begin{frame}
+\automatisme{primitives}
+
+
+Une fonction  dérivable sur $\R$ dont la fonction dérivée  $f$ est définie sur $\R$ par $f(x) =x\text{e}^x$, est la fonction $F$, définie sur $\R$, par :
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}X}
+\textbf{a.~~} $F(x) =\dfrac{x^2}{2}\text{e}^x$&\textbf{c.~~} $F(x) = (x + 1)\text{e}^x$\\
+\textbf{b.~~} $F(x) = (x - 1)\text{e}^x$ &\textbf{d.~~} $F(x) =x^2 \text{e}^{x^2}$ 
+\end{tabularx}
+\end{center}
+
+\end{frame}
+
+
+
 
 
 
