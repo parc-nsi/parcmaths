@@ -93,12 +93,10 @@ markdown_extensions:
 
 plugins:
   - search
-  - kroki
   - macros:
       verbose: True
       include_dir: include # voir https://mkdocs-macros-plugin.readthedocs.io/en/latest/advanced/#changing-the-directory-of-the-includes
-  - mkdocs-jupyter:
-      include_source: True
+
 
 extra:
   social:
