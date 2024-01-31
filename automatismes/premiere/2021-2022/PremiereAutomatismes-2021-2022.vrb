@@ -1,0 +1,15 @@
+\automatisme{suites}
+\begin{lstlisting}
+#On définit la suite (Un) par Un=f(n)
+def f(n):
+  if n==0:
+    return 1
+  else:
+    return 1/n**2
+\end{lstlisting}
+\begin{itemize}
+	\item $u_{0}=1$ Vrai ou Faux ?
+	\item $u_{1}=0,5$ Vrai ou Faux ?
+	\item $u_{50}=0,0004$ Vrai ou Faux ?
+	\item La suite n'est pas d\'efinie en $0$. Vrai ou Faux ?
+\end{itemize}

@@ -1,0 +1,1020 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ressources pour l'enseignement des  mathématiques   Lycée  du  Parc  à Lyon ">
+      
+      
+      
+        <link rel="canonical" href="https://parc-nsi.github.io/parcmaths/grand_oral/grand_oral/">
+      
+      
+        <link rel="prev" href="../../maths_comp/sujets_oral/">
+      
+      
+        <link rel="next" href="../../python/python_premiere/">
+      
+      
+      <link rel="icon" href="../../assets/logo-parc.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.6">
+    
+    
+      
+        <title>Grand oral - ParcMaths</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+    
+      
+    
+    <!-- Load CDNs : Pyodide (Python in WASM), Ace (Editor) and JQuery (Terminal) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.asm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.23.0/js/jquery.terminal.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.23.0/css/jquery.terminal.min.css" rel="stylesheet">
+
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../xtra/stylesheets/pyoditeur.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ressources-des-editeurs" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="ParcMaths" class="md-header__button md-logo" aria-label="ParcMaths" data-md-component="logo">
+      
+  <img src="../../assets/logo-parc.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ParcMaths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Grand oral
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Passer au mode jour"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Passer au mode jour" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Passer au mode nuit"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passer au mode nuit" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://parc-nsi.github.io/parcmaths" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Parc-Nsi
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Présentation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../automatismes/premiere/automatismes_premiere/" class="md-tabs__link">
+          
+  
+  Automatismes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../premiere/sujets_oral/" class="md-tabs__link">
+          
+  
+  Oral
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../python/python_premiere/" class="md-tabs__link">
+          
+  
+  Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../enigmes/enigmes/" class="md-tabs__link">
+        
+  
+    
+  
+  Enigmes
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ParcMaths" class="md-nav__button md-logo" aria-label="ParcMaths" data-md-component="logo">
+      
+  <img src="../../assets/logo-parc.png" alt="logo">
+
+    </a>
+    ParcMaths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://parc-nsi.github.io/parcmaths" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Parc-Nsi
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Présentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Automatismes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Automatismes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../automatismes/premiere/automatismes_premiere/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Première
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../automatismes/maths_complementaires/automatismes_maths_complementaires/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Maths complémentaires
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Oral
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Oral
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../premiere/sujets_oral/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sujets d'oral en première
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths_comp/sujets_oral/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sujets d'oral en terminale
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Grand oral
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/python_premiere/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Première
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enigmes/enigmes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enigmes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+    
+                  
+
+  
+  
+
+
+<p>Mon <a href="../GrandOral/Presentation-Grand-Oral.pdf">diaporama de présentation</a> : rien d'original, j'ai compilé des extraits de la page Eduscol et du document de synthèse de l'inspection générale</p>
+<h1 id="ressources-des-editeurs">Ressources des éditeurs :<a class="headerlink" href="#ressources-des-editeurs" title="Permanent link">⚓︎</a></h1>
+<ul>
+<li><a href="https://pdf.editions-hatier.fr/Variations_maths_GrandOral.pdf">Éditions Hatier collection Variations</a></li>
+</ul>
+<h1 id="sitographie">Sitographie :<a class="headerlink" href="#sitographie" title="Permanent link">⚓︎</a></h1>
+<ul>
+<li>Des exemples de questions, un Genially de Marc Aurélien Chardine <a href="https://view.genial.ly/6037545a06c0a40d9d0aff62/interactive-content-questions-grand-oral-spe-scientifiques">https://view.genial.ly/6037545a06c0a40d9d0aff62/interactive-content-questions-grand-oral-spe-scientifiques</a></li>
+<li>Un document à lire pour mieux comprendre la recherche en mathématiques : <a href="GranOral/Daniel_Perrin.pdf">Conférence de Daniel Perrin</a> </li>
+<li>Des documents avec une présentation de l'épreuve et des pistes de sujets :</li>
+<li>la page Eduscol sur le grand oral <a href="https://eduscol.education.fr/729/presentation-du-grand-oral">https://eduscol.education.fr/729/presentation-du-grand-oral</a></li>
+<li><a href="https://euler.ac-versailles.fr/IMG/pdf/pistes-grand-oral-huet-version-sans_programme.pdf">document de synthèse d'un IPR de l'académie de Versailles</a></li>
+<li><a href="../GrandOral/oral_maths_euler.pdf">encore un document de l'académie de Versailles</a></li>
+<li><a href="../GrandOral/grand_oral_inspection_g%C3%A9n%C3%A9rale.pdf">document de l'inspection générale</a></li>
+<li><a href="https://maths-stcyr.jimdofree.com/terminale-sp%C3%A9cialit%C3%A9/">un document partagé par un collègue du lycée militaire de Saint-Cyr</a></li>
+<li>Le site <a href="http://images.math.cnrs.fr/">Images des mathématiques</a>, consulter en particulier la rubrique <a href="http://images.math.cnrs.fr/-Ressources-pedagogiques-pour-aller-moins-loin-.html">Pour aller moins loin</a>.</li>
+<li>Croissances cumulées : <a href="http://images.math.cnrs.fr/La-loi-de-la-croissance-cumulee.html">http://images.math.cnrs.fr/La-loi-de-la-croissance-cumulee.html</a> thèmes logarithmes, suites ....</li>
+<li>A propos des différentes preuves du théorème de Pythagore : <a href="http://images.math.cnrs.fr/Encore-une-preuve-du-theoreme-de-Pythagore.html">http://images.math.cnrs.fr/Encore-une-preuve-du-theoreme-de-Pythagore.html</a></li>
+<li>Combinatoire : <a href="https://images.math.cnrs.fr/+Demarrage-trompeur+">Démarrage trompeur</a></li>
+<li>
+<p>Loi binomiale, planche de Galton : <a href="http://images.math.cnrs.fr/La-courbe-en-cloche-transparente.html">La courbe en cloche... transparente</a></p>
+</li>
+<li>
+<p>Le site Culture Maths  <a href="https://culturemath.ens.fr/">https://culturemath.ens.fr/</a></p>
+</li>
+<li>Le portail <a href="https://eduscol.education.fr/maths/">Eduscol des mathématiques</a></li>
+<li>
+<p>Un site spécial grand oral proposé par l'académie de Grenoble <a href="https://oral.web.ac-grenoble.fr/">https://oral.web.ac-grenoble.fr/</a></p>
+</li>
+<li>
+<p>Le site du livre <a href="https://grand-oral.lerobert.com/9782321015383">Le Guide du Grand Oral</a> de Sthéphane de Freitas, créateur de la méthode "Porter sa voix", fondateur du concours d'éloquence qui a donné lieu au film "A voix haute". Des ressources méthodologiques et par disciplines : exempel en mathématiques <a href="https://grand-oral.lerobert.com/partage/a/2032389/chapitre-les-ressources-numeriques-pour-les-mathematiques">https://grand-oral.lerobert.com/partage/a/2032389/chapitre-les-ressources-numeriques-pour-les-mathematiques</a></p>
+</li>
+<li>La plateforme de l'académie de Lyon dédiée à la <a href="http://culture-scientifique-technique.enseigne.ac-lyon.fr/spip/">culture scientifique</a>.</li>
+<li>Arts et mathématiques :</li>
+<li>
+<p>Une galerie en ligne : <a href="http://gallery.bridgesmathart.org/exhibitions/2021-joint-mathematics-meetings">http://gallery.bridgesmathart.org/exhibitions/2021-joint-mathematics-meetings</a></p>
+</li>
+<li>
+<p>Une page consacrée à la préparation du Grand Oral sur un <a href="https://sites.google.com/a/prefas.org/svt_am_nord/loral-en-classe-de-svt?authuser=0">site</a> partagé par  Karine Delhaye et des collègues de SVT des lycées français d'Amérique du Nord  :</p>
+</li>
+</ul>
+<p><a href="https://sites.google.com/a/prefas.org/svt_am_nord/loral-en-classe-de-svt?authuser=0"><img alt="image" src="../GrandOral/images/grand_oral_aefne.jpeg" /></a></p>
+<ul>
+<li>
+<p>A destination des enseignants mais intéressant du point de vue des élèves pour anticiper les critères d'évaluation, le support de formation de Simon Tournerie, Virginie Roche et Johann Boeuf : <a href="https://view.genial.ly/601d2f12a198a90d2050b9e1">https://view.genial.ly/601d2f12a198a90d2050b9e1</a></p>
+</li>
+<li>
+<p>Plusieurs pistes à explorer depuis la page d'accueil du site de la <em>Journée internationale des mathématiques</em>  <a href="https://betterworld.idm314.org/index_fr.html#">https://betterworld.idm314.org/index_fr.html#</a></p>
+</li>
+<li>
+<p>Le <a href="https://www.apprendre-en-ligne.net/blog/index.php/">blog de mathématiques de Didier Muller</a></p>
+</li>
+</ul>
+<h1 id="bibliographie">Bibliographie :<a class="headerlink" href="#bibliographie" title="Permanent link">⚓︎</a></h1>
+<ul>
+<li>Une liste d'ouvrages de vulgarisation ou de fiction traitant des mathématiques : <a href="http://algorythmes.blogspot.com/2020/11/bibliomaths-cest-mon-litteramath.html">http://algorythmes.blogspot.com/2020/11/bibliomaths-cest-mon-litteramath.html</a></li>
+<li>Thème : Mathématiques et anglais :</li>
+<li>"Enigmes mathématiques de Lewis Carroll - 72 problèmes pour vos nuits blanches " d'Elizabeth Busser</li>
+<li>"Once upon an algorithm" de Martin Erwing</li>
+<li>"Computational Fairy Tales" de Jeremy Kubica</li>
+<li>Le <strong>"Dictionnaire de (presque) tous les nombres entiers"</strong> de Daniel Lignon aux éditions Ellipses : les clefs sont les entiers naturels successifs (pas tous ...) et les valeurs leurs propriétés avec des focus. Par exemple pour 43, on a un article sur les <em>nombres Mc Nugget</em> puisque 43 est le plus grand entier qui ne peut pas être obtenu comme combinaison linéaire de  6, 9 et 20 (traditionnellement les nombres de beignets de poulet possibles chez Mc Donalds). Les  <em>nombres Mc Nugget</em>  sont liés au problème de Frobenius de décomposstion des entiers en somme d'entiers premiers entre eux fixés (le système de monnaie par exemple (6,9,20)). Voir cet article (en anglais) sur le problème de Frobenius <a href="https://mathworld.wolfram.com/CoinProblem.html">https://mathworld.wolfram.com/CoinProblem.html</a>. Pour un nombre quelconque d'entiers fixé est un problème NP-complet. Il existe une formule pour deux entiers, un algorithme polynomial mais pas de formule pour trois et rien de connu pour 4. Des problèmes similaires sont ceux du rendu optimal de monnaie =&gt; un bon moyen de parler d'algorithmique. A propos d'algorithme glouton, voir l'exercice "Cannelés bordelais" du sujet national des Olympiades académiques de Première 2017 <a href="http://math.univ-lyon1.fr/~lass/sujetlyon17.pdf">http://math.univ-lyon1.fr/~lass/sujetlyon17.pdf</a> . A propos des  <em>nombres Mc Nugget</em>   voir cette video de <a href="https://youtu.be/mJ9a_-LT_QA">Scientifcfiz</a>.</li>
+<li>Le <a href="https://www.apprendre-en-ligne.net/blog/index.php/2021/02/11/3939-dictionnaire-decale-des-mathematiques">Dictionnaire décalé des mathématiques</a> d'Elisabeth Busser et Bertrand Hauchecorne avec une préface de Cédric Villani.</li>
+</ul>
+<h1 id="des-videos-en-ligne">Des videos en ligne<a class="headerlink" href="#des-videos-en-ligne" title="Permanent link">⚓︎</a></h1>
+<ul>
+<li>Ressources méthodologiques :</li>
+<li>Sur Lumni  :    <ul>
+<li><a href="https://www.lumni.fr/programme/les-petits-tutos-du-grand-oral">https://www.lumni.fr/programme/les-petits-tutos-du-grand-oral</a>  : amusant, quelques bons conseils</li>
+<li><a href="https://www.lumni.fr/dossier/preparer-son-oral">https://www.lumni.fr/dossier/preparer-son-oral</a>   : un peu démagogique (la méthode Coué) mais quelques bons conseils</li>
+</ul>
+</li>
+<li>
+<p>Sur le site de l'association Trouve ta voie <a href="http://prepagrandoraldubac.fr">http://prepagrandoraldubac.fr</a>   quelques, j'en ai visionné quelques unes, les conseils sont plutot pertinents et il est intéressant d'observer la gestuellle des "formateurs", cependant beaucoup de videos ne sont pas librement accessibles</p>
+</li>
+<li>
+<p><a href="https://www.college-de-france.fr/site/gerard-berry/course-2015-01-28-16h00.htm">Conférence de Gérard Berry sur la révolution informatique dans les sciences</a></p>
+</li>
+<li>Chaînes de videos en ligne :</li>
+<li>Pour découvrir à travers une petite  approche historique (par des collégiens mais très bien)  : <a href="https://www.youtube.com/channel/UCIUbSRKVVOpWl_xB3soLU1g">Scienticfiz</a></li>
+<li>Pour approfondir : la chaîne de Mickael Launay <a href="https://www.youtube.com/user/Micmaths">https://www.youtube.com/user/Micmaths</a></li>
+<li>Une chaîne YouTube. Des vidéos de vulgarisation mathématique toujours illustrées par des animations fort bien faites par leur créateur Grant Sanderson, qui a étudié les maths à Stanford et qui, après avoir été ingénieur en data sciences, est revenu à ses premières amours avec la chaîne <a href="https://www.3blue1brown.com/">3blue1Brown</a>. 
+On pourra pointer la vidéo sur la modélisation de la propagation du Coronavirus, très claire et à la portée des lycéens. </li>
+<li>La chaîne You Tube de Mickael Launay <a href="https://www.youtube.com/c/Micmaths/">https://www.youtube.com/c/Micmaths/</a> avec de nombreuses videos à destination des élèves de terminale.</li>
+<li>La chaîne You Tube Maths en Tête comporte de nombreuses videos sur l'histoire des mathématiques <a href="https://www.youtube.com/c/AlexandreMorgan/featured">https://www.youtube.com/c/AlexandreMorgan/featured</a></li>
+<li>
+<p>Le site VideoMaths du CNRS rassemble de nombreuses videos qui pourraient donner des idées de questions pour le grand oral : <a href="http://video.math.cnrs.fr/">http://video.math.cnrs.fr/</a> avec souvent des ouvertures sur d'autres disciplines :</p>
+<ul>
+<li>Couplage Maths/Physique, modélisation de la propagation de la chaleur avec les carrés magiques de Dirichlet, principe du maximum et preuve d'unicité, questions que peut se pose un mathématicien, théorème de convergence monotone : <em>Existe-t-il une solution ? Est-elle unique ? Peut-on la construire ?</em> :  <a href="https://youtu.be/2oq1UDpqEGQ">Video Audimaths</a></li>
+<li>La format de papier A4 (suites, second degré) :<a href="https://youtu.be/sgsJuqaiCCM">Video Audimaths</a></li>
+<li>Magnifiques logarithmes par Benoit Rittaud (logarithmes, tables de calcul, histoire, aire sous l'hyperbole ...) : <a href="https://youtu.be/-NcKh-qvb_g">Video Audimaths</a>  =&gt; la démonstration que l'aire sous la courbe d'un arce d'hyperbole entre 1 et u x v vérifie la relation fondamentale du logarithme pourrait être réexploitée. </li>
+</ul>
+</li>
+<li>
+<p><a href="https://youtu.be/dBTF2M3M1Uk">Conférence de Daniel Perrin</a>  <em>Cryptographie et nombres premiers</em> avec plein d'anecdotes historiques :</p>
+</li>
+<li>Les mathématiques sont utiles : tunnel de Samos, fonction exponentielle et datation, comment gagner à un jeu télévisé (jeu de Monty Hall)</li>
+<li>
+<p>Les mathématiques inutiles aujourd'hui le seront peut-être demain : nombres premiers et cryptographie, histoire des codes secrets (parmi les exemples : histoire de Marie Stuart, code secret dans la nouvelle <em>Le scarabée d'or</em> d'Edgar Poe =&gt; on pourrait faire déchiffrer des messages aux examinateurs en leur donnant les lettres les plus fréquentes dans la langue du message, proposer un petit programme Python ...)</p>
+</li>
+<li>
+<p><a href="https://youtu.be/rLFUnCUyPko">Conférence de Cédric Villani : "Tout est mathématiques"</a>:</p>
+</li>
+<li>De la recherche fondamentale aux applications inattendues : courbure de Riemmann à la théorie de la relativité et aux GPS, distribution statistique des zéros de fonction zeta de Riemman et niveaux d'énergie des atomes</li>
+<li>Formule de Boltzmann, entropie <span class="arithmatex">\(s= k log(w)\)</span> apprivoiser le hasard (Galton, loi des erreurs de Laplace etc ...)</li>
+</ul>
+<h1 id="histoire-des-mathematiques">Histoire des mathématiques<a class="headerlink" href="#histoire-des-mathematiques" title="Permanent link">⚓︎</a></h1>
+<p>Sites ressources :</p>
+<ul>
+<li><a href="https://hist-math.fr/">https://hist-math.fr/</a>  =&gt; formidable site de Bernard Ycart, des histoires en audio, des liens avec les programmes de lycé, recherche par mot thèmes ou personnages et accès à des textes originaux</li>
+<li><a href="http://serge.mehl.free.fr/">http://serge.mehl.free.fr/</a>  =&gt;  ma référence</li>
+<li><a href="http://villemin.gerard.free.fr/">http://villemin.gerard.free.fr/</a> =&gt; un site avec plein d'histoires sur les nombres</li>
+<li>Femmes et mathématiques :<ul>
+<li>Quizz : http://revue.sesamath.net/spip.php?article1372</li>
+<li><a href="https://podcast.ausha.co/sophie-germain-project">https://podcast.ausha.co/sophie-germain-project</a>  =&gt;   très bon podcast sur Sophie Germain qui élargit sur la place des femmes en sciences</li>
+</ul>
+</li>
+</ul>
+<h1 id="methodologie">Méthodologie<a class="headerlink" href="#methodologie" title="Permanent link">⚓︎</a></h1>
+<ul>
+<li>Définir une problématique : le <a href="https://www.reseau-canope.fr/savoirscdi/fileadmin/fichiers_auteurs/cdi_outil_pedagogique/Dispositifs_d_aide/D%C3%A9limiter-le-sujet.pdf">questionnement quintilien</a></li>
+</ul>
+<h1 id="des-idees-de-sujets">Des idées de sujets<a class="headerlink" href="#des-idees-de-sujets" title="Permanent link">⚓︎</a></h1>
+<ul>
+<li>Sport : comment prédire le classement final d'un championnat de foot ?  <a href="https://www.statsperform.com/resource/why-2021-could-be-the-year-of-change-in-european-football/">https://www.statsperform.com/resource/why-2021-could-be-the-year-of-change-in-european-football/</a></li>
+<li>Modélisation d'une épidémie :</li>
+<li>un <a href="https://www.franceculture.fr/emissions/la-methode-scientifique/la-methode-scientifique-emission-du-mercredi-27-mai-2020">podcast</a></li>
+<li>Modélisation du modèle SIR avec Geogebra (Christian Mercat IREM de Lyon) <a href="https://www.geogebra.org/m/ztf3fqce">https://www.geogebra.org/m/ztf3fqce</a></li>
+<li>Un article sur le site <a href="https://culturemath.ens.fr/thematiques/mathematiques-appliquees/propagation-d-epidemies">Culture Maths</a></li>
+<li>Suites de Fibonacci :</li>
+<li>modèle de croissance des plantes avec les L-systèmes de Lindenmaier (pour expliquer Finobacci dans les plantes)</li>
+<li>La Ficelle, journal sur l'histoire de Lyon,  met à l'honneur dans son numéro d'Octobre,  André Marie Ampère, "où comment états d’âme et génie se marient et font avancer la science". 
+Journal téléchargeable gratuitement depuis le site <a href="http://www.laficelle.com/">http://www.laficelle.com/</a></li>
+<li>Fausse preuve : la somme des entiers vaudrait-elle -1/12 ? <a href="http://images.math.cnrs.fr/La-somme-des-entiers.html">http://images.math.cnrs.fr/La-somme-des-entiers.html</a></li>
+<li>Mathématiques et jeux, exemple du 2048. Questions qu'on peut se poser : les tuiles sont toutes des puissances de 2 (preuve par récurrence) ? quelle est la configurationthéorique de fin de jeu ? valeur de la plus grande tuile au 2048 (somme des termes consécutifs d'une suite géométrique, décomposition d'un nombre en base 2) ? Le score maximal ? Probabilité d'atteindre la configuration théorique de fin de jeu ? Quelles stratégies ? Voir <a href="https://www.science4all.org/article/2048-game/">https://www.science4all.org/article/2048-game/</a></li>
+<li>Théorèmes isopérimétriques : quelle forme pour une pizza d'aire donnée si on aime la croûte ou si on ne l'aime pas ? <a href="https://culturemath.ens.fr/thematiques/geometrie/les-theoremes-isoperimetriques">https://culturemath.ens.fr/thematiques/geometrie/les-theoremes-isoperimetriques</a></li>
+<li>A propos de la récurrence :</li>
+<li><a href="http://depmath-nancy.univ-lorraine.fr/club/docs/1718/170920recurrence.pdf">Feuille d'exercices intéressante du Club de Maths de Nancy</a></li>
+<li><a href="http://paestel.fr/sites/default/files/Mat_les_ressources/1%C3%A8re/Atelier%2C%20probl%C3%A8me/mlr-une_introduction_aux_fractales.pdf">Une autre feuille du Club de Maths de Nancy sur le flocon de Von Koch</a></li>
+<li><a href="http://depmath-nancy.univ-lorraine.fr/club/documents.html">La page du Club de Maths de Nancy avec tous leurs exercices</a></li>
+<li>Sur le site <a href="http://images.math.cnrs.fr/">Images des mathématiques</a>, consulter en particulier la rubrique <a href="http://images.math.cnrs.fr/-Ressources-pedagogiques-pour-aller-moins-loin-.html">Pour aller moins loin</a>.</li>
+<li>Croissances cumulées : <a href="http://images.math.cnrs.fr/La-loi-de-la-croissance-cumulee.html">http://images.math.cnrs.fr/La-loi-de-la-croissance-cumulee.html</a> thèmes logarithmes, suites ....</li>
+<li>A propos des différentes preuves du théorème de Pythagore : <a href="http://images.math.cnrs.fr/Encore-une-preuve-du-theoreme-de-Pythagore.html">http://images.math.cnrs.fr/Encore-une-preuve-du-theoreme-de-Pythagore.html</a></li>
+<li>Combinatoire : <a href="https://images.math.cnrs.fr/+Demarrage-trompeur+">Démarrage trompeur</a></li>
+<li>Loi binomiale, planche de Galton : <a href="http://images.math.cnrs.fr/La-courbe-en-cloche-transparente.html">La courbe en cloche... transparente</a></li>
+<li>Voyage au cœur de la cryptographie, un article sur <a href="https://culturemath.ens.fr/thematiques/lycee/voyage-au-coeur-de-la-cryptographie">Culture Maths</a>.
+Plus généralement sur le nombres premiers, voir la <a href="https://youtu.be/dBTF2M3M1Uk">Conférence de Daniel Perrin</a> :</li>
+<li>cryptographie (applications informatiques) voir https://culturemath.ens.fr/thematiques/lycee/voyage-au-coeur-de-la-cryptographie</li>
+<li>infinité (euclide) =&gt; bien pour l'oral</li>
+<li>répartition (logarithme, crible d'ératosthène)</li>
+<li>conjectures (golbach, nombres premiers jumeaux)</li>
+<li>Les mathématiques du Vendée Globe, activités pédagogiques inspirantes proposés par des collègues de l'académie de Nantes : <a href="https://www.pedagogie.ac-nantes.fr/mathematiques/enseignement/activites-pedagogiques/vendee-globe-2020-lycee-1320098.kjsp?RH=1160079471359">https://www.pedagogie.ac-nantes.fr/mathematiques/enseignement/activites-pedagogiques/vendee-globe-2020-lycee-1320098.kjsp?RH=1160079471359</a></li>
+<li>Nombres décomposables (plein de possibilités, voir le problème de Frobenius) : l'histoire de 1729, le  <a href="https://en.wikipedia.org/wiki/Taxicab_number">nombre de Ramanujan</a> dans une video <a href="https://youtu.be/zx_t-rIc-BQ">Scienticfiz</a>. Un exemple de programme pour le déterminer dans <a href="https://console.basthon.fr/?script=eJxtUUFugzAQvCPxh1VOdoqqot4i9Qs59IoQWhuTujUGGaNWQvl715gSaLKn3fHM7GhdqwaGFo1Rg688_uhKomD8lCZAVSvZtT28Qa2lZzyCQl8IyeMQJDS9xOn7QxsFtvMzvpiEajoHRntPr9qCQ3tRLM9mqyfI-YYZSo5Cy2oYW3IOlOMRXom3GIRpz9fNRkL-MfY_003alXzPiNIiEMtn7Htla8bi4oyicH4vEU7h1x5WZlAP1i_m6_qSshRb9_KmmU-zntkpPzo75892GdMkTSJaMKSD8gyYJAoP3g8-Nk16p61nzeHctZSczOAdW7TjJ1o4wRSoV9JOeP27-ySWllB5Q-vYHvgv8YGZvQ">Basthon</a>.  On trouve plein de références au  <a href="https://en.wikipedia.org/wiki/Taxicab_number">nombre de Ramanujan</a>  dans l'animé <a href="http://culturedj.owni.fr/2011/06/16/les-maths-par-futurama/index.html">Futurama</a>, voir cet <a href="https://www.bbc.com/news/magazine-24459279">article</a>. Plus généralement, les références aux mathématiques sont nombreuses dans  <a href="http://culturedj.owni.fr/2011/06/16/les-maths-par-futurama/index.html">Futurama</a>.</li>
+<li>Autour de la décomposition en base deux :</li>
+<li>Multiplication éthiopienne : <a href="http://images.math.cnrs.fr/Comment-multiplier-en-ne-connaissant-que-la-table-de-2.html">http://images.math.cnrs.fr/Comment-multiplier-en-ne-connaissant-que-la-table-de-2.html</a></li>
+<li>Tour de magie et numération binaire : :<a href="https://video.math.cnrs.fr/magie-en-base-deux/">https://video.math.cnrs.fr/magie-en-base-deux/</a></li>
+<li>Autour du thème de l'infini en mathématiques :</li>
+<li>Article page 124 du "Dictionnaire décales des Mathématiques" de E.Busser et B.Hauchecorne : émergence du concept (<em>infini actuel</em> et <em>infini potentiel</em>)</li>
+<li>Preuve que l'ensemble des réels est non dénombrable par <a href="https://fr.wikipedia.org/wiki/Argument_de_la_diagonale_de_Cantor">l'argument diagonal de Cantor</a> =&gt; on pourrait travailler autour des idées en démonstration puisque l <a href="https://fr.wikipedia.org/wiki/Argument_de_la_diagonale_de_Cantor">l'argument diagonal de Cantor</a> a été utilisé dans d'autres questions : <a href="https://fr.wikipedia.org/wiki/Probl%C3%A8me_de_l%27arr%C3%AAt">problème de l'arrêt</a> , <a href="https://fr.wikipedia.org/wiki/Paradoxe_de_Russell">paradoxe de Russel</a> =&gt; les paradoxes logiques se prêtent bien à un exposé oral.</li>
+<li>Preuve d'Euclide qu'il y a une infinité de nombres premeirs (explicable à l'oral)</li>
+<li><a href="https://fr.m.wikipedia.org/wiki/Paradoxe_d%27Achille_et_de_la_tortue">Paradoxe d'Achille et la tortue</a> : lien avec les limites de suites</li>
+<li><a href="https://fr.wikipedia.org/wiki/Paradoxe_de_Saint-P%C3%A9tersbourg">Paradoxe Saint Petersbourg</a> : nombreuses entrées possibles : histoire de la <a href="https://youtu.be/jWut-6jBl3U">famille de mathématiciens Bernoulli</a>, loi géométrique et espérance mathématique, lien avec la théorie de la décision (SES)  </li>
+<li>L'histoire des  séries infinies d'Euler à Ramanujan :<ul>
+<li>Une histoire de Bernard Ycart <a href="https://hist-math.fr/eulera-auto#/">https://hist-math.fr/eulera-auto#/</a></li>
+<li>Les suites qui rendent fou  <a href="http://villemin.gerard.free.fr/Wwwgvmm/Suite/Suitfou.htm">http://villemin.gerard.free.fr/Wwwgvmm/Suite/Suitfou.htm</a></li>
+</ul>
+</li>
+<li>Histoire de la notion de limite d'Archimède à Ramanujan en passant par Euler, le produit de Wallis, la formule de Viète : une histoire de Bernard Ycart <a href="https://hist-math.fr/ramanujan-auto#/">https://hist-math.fr/ramanujan-auto#/</a>, voir aussi <a href="https://fr.wikipedia.org/wiki/Formule_de_Vi%C3%A8te">https://fr.wikipedia.org/wiki/Formule_de_Vi%C3%A8te</a></li>
+</ul>
+<p><img alt="infini" src="../GrandOral/images/infini.png" /></p>
+<ul>
+<li>Probabilités conditionnelles et formule de Bayes : application aux valeurs prédictives et tests et aux filtres anti-spam, un article sur <a href="https://culturemath.ens.fr/thematiques/concours-d-enseignement/les-probabilites-ont-la-cote">Culture Maths</a></li>
+<li>Démonstration de Feynman pour la loi des aires de Kepler (deuxième <a href="https://fr.wikipedia.org/wiki/Lois_de_Kepler">loi de Kepler</a> ) présentée par Benoit Rittaud : <em>le triomphe des mathématiques dans l'explication des lois physiques</em> + discussion entre point de vue physique et mathématiques + évocation de quelques grands noms de la physique (Copernic, Kepler, Newton, Feynman) <a href="http://images.math.cnrs.fr/La-loi-des-aires-par-Benoit-Rittaud">http://images.math.cnrs.fr/La-loi-des-aires-par-Benoit-Rittaud</a> =&gt; autre piste mathématisation de la physique avec Newton mais aussi :<ul>
+<li>Isaac Newton mathématicien ou physicien ?</li>
+<li>Les mathématiques une science sans passion ni polémiques ?    =&gt; polémique entre Newton et Leibniz sur la paternité du calcul différentiel</li>
+</ul>
+</li>
+<li>Paradoxes en mathématiques : de nombreuses possibilités pour l'oral =&gt; voir l'article <em>paradoxes</em>  dans  <a href="https://www.apprendre-en-ligne.net/blog/index.php/2021/02/11/3939-dictionnaire-decale-des-mathematiques">Dictionnaire décalé des mathématiques</a> </li>
+<li>Optimisation : <a href="http://serge.mehl.free.fr/anx/pb_didon.html">problème de Didon</a> et <a href="https://culturemath.ens.fr/thematiques/geometrie/les-theoremes-isoperimetriques">inégalités isopérimétriques</a></li>
+<li>A propos de l'efficacité de la vaccination, un exemple historique intéressant (lien avec les équations différentielles mais la justification de la solution de l'équation est technique, on pourrait se contenter de donner l'équation finale et sa solution avec les outils de terminale)
+<a href="http://images.math.cnrs.fr/Daniel-Bernoulli-pionnier-des-modeles-mathematiques-en-medecine">http://images.math.cnrs.fr/Daniel-Bernoulli-pionnier-des-modeles-mathematiques-en-medecine</a></li>
+<li>Thèmes en lien avec le  logarithme :</li>
+<li>Introduction historique : Magnifiques logarithmes par Benoit Rittaud (logarithmes, tables de calcul, histoire, aire sous l’hyperbole …) : <a href="https://youtu.be/sgsJuqaiCCM">Video Audimaths</a> =&gt; la démonstration que l’aire sous la courbe d’un arce d’hyperbole entre 1 et u x v vérifie la relation fondamentale du logarithme pourrait être réexploitée.</li>
+<li>A propos des échelles de représentation : linéaire ou logarithmique (échelle de Richter ....), une ressource Geogebra de Christian Mercat <a href="https://www.geogebra.org/m/vgyp3kkq">https://www.geogebra.org/m/vgyp3kkq</a>  et cet article <a href="http://images.math.cnrs.fr/Epidemie-et-logarithme">http://images.math.cnrs.fr/Epidemie-et-logarithme</a></li>
+<li>En lien avec <strong>l'économie</strong> :</li>
+<li><a href="https://culturemath.ens.fr/thematiques/concours-d-enseignement/les-cles-du-credit">https://culturemath.ens.fr/thematiques/concours-d-enseignement/les-cles-du-credit</a></li>
+<li>En lien avec la théorie des jeux :</li>
+<li>Un très bon article sur le jeu de Nim (l'un des rares à stratégie gagnante connue) avec une ouverture culturelle <a href="https://culturemath.ens.fr/thematiques/lycee/la-theorie-des-jeux-a-l-ecran">https://culturemath.ens.fr/thematiques/lycee/la-theorie-des-jeux-a-l-ecran</a>  =&gt; l'exposé oral me semble possible</li>
+<li>Pour le jeu de <a href="https://fr.wikipedia.org/wiki/Hex">hex</a>  John Nash a démontré qu'une stratégie gagnante existe mais on ne sait pas en construire une</li>
+<li>Radioactivité, zones de rémanence :<ul>
+<li>surveillance alimentaire mise en place après l'accident de Tchernobyl <a href="https://www.economie.gouv.fr/dgccrf/contamination-radioactive-des-denrees-dorigine-vegetale-resultats-des-analyses-dgccrf#n5">https://www.economie.gouv.fr/dgccrf/contamination-radioactive-des-denrees-dorigine-vegetale-resultats-des-analyses-dgccrf#n5</a></li>
+<li>le retour de l'histoire (France/Algérie, essais nucléaires) à travers une tempête de sable <a href="https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/jura/les-poussieres-de-sable-du-sahara-etaient-porteuses-de-cesium-137-residu-d-anciens-essais-nucleaires-francais-1973641.html">https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/jura/les-poussieres-de-sable-du-sahara-etaient-porteuses-de-cesium-137-residu-d-anciens-essais-nucleaires-francais-1973641.html</a></li>
+</ul>
+</li>
+<li>Série harmonique :</li>
+<li>Preuve de la divergence par Oresme racontée par Bernard Ycart : <a href="https://hist-math.fr/eulera-auto#/14">https://hist-math.fr/eulera-auto#/14</a></li>
+<li>Sur le site de Serge Mehl :  <a href="http://serge.mehl.free.fr/chrono/BernoulliJean.html#harmo">http://serge.mehl.free.fr/chrono/BernoulliJean.html#harmo</a></li>
+<li>Analogie de la série harmonique avec certains proverbes : <a href="http://images.math.cnrs.fr/Serie-harmonique-et-sagesse-populaire">http://images.math.cnrs.fr/Serie-harmonique-et-sagesse-populaire</a></li>
+<li>Probabilités :</li>
+<li>probabilités conditionnelles, problème historique, <em>le problème des partis</em>  raconté par Bernard Ycart <a href="https://hist-math.fr/pacioli-auto#">https://hist-math.fr/pacioli-auto#</a></li>
+<li>probabilités conditionnelles, espérance : <hhttps://www.franceculture.fr/conferences/universite-de-nantes/pourquoi-lappat-du-gain-lemporte-t-il-sur-le-risque-de-perdre?utm_medium=Social&utm_source=Twitter#Echobox=1614608976>, à mettre en lien avec le paradoxe de St Petersbourg.</li>
+<li>Ordre de grandeur et explosion combinatoire, "Mélangez un jeu de cartes et bien le mélange obtenu est probablement unique dans l'histoire de l'humanité", excellente video de Jean-Baptiste Aubun  sur les ordres de grandeur." <a href="http://video.math.cnrs.fr/ordres-de-grandeur/">http://video.math.cnrs.fr/ordres-de-grandeur/</a></li>
+<li>A propos de la loi normale (courbe en cloche), des intervalles de fluctuation, de confiance :<ul>
+<li><a href="https://youtu.be/LGfGZmi3mYY">Video sur la planche de Galton</a></li>
+<li><a href="https://images.math.cnrs.fr/La-courbe-en-cloche">Article sur la loi des grands nombres ou loi normale par Jean-Pierre Kahane</a></li>
+<li><a href="http://images.math.cnrs.fr/La-fourchette-d-un-sondage">Article sur les sondages et les intervalles de confiance</a></li>
+</ul>
+</li>
+<li>Ordre de grandeur, notations, suites : le nombre de Graham et la notation fléchée de Knuth : <a href="https://blogdemaths.wordpress.com/2021/03/07/quels-sont-les-derniers-chiffres-du-nombre-de-graham-1ere-partie-le-dernier-chiffre/">https://blogdemaths.wordpress.com/2021/03/07/quels-sont-les-derniers-chiffres-du-nombre-de-graham-1ere-partie-le-dernier-chiffre/</a></li>
+<li>Imagerie médicale, tomographie, ressource conseillée par @matchretien</li>
+<li><a href="https://damiengeneste.github.io/tomo-web/">https://damiengeneste.github.io/tomo-web/</a></li>
+<li><a href="bitcoin.md">Blockchain / Bitcoin</a></li>
+<li>Nombres premiers et hasard : <a href="http://images.math.cnrs.fr/Les-nombres-premiers-respectent-ils-la-parite.html">http://images.math.cnrs.fr/Les-nombres-premiers-respectent-ils-la-parite.html</a>    =&gt; un bon sujet avec possibilité de proposer un programme simple de décompte</li>
+<li>Histoire de la notion de fonction, un article de Bernard Ycart <a href="http://revue.sesamath.net/spip.php?article1414">http://revue.sesamath.net/spip.php?article1414</a></li>
+<li>Du discret au continu : une ressource sur la construction  de la fonction exponentielle par la méthode d'Euler avec preuve de la dérivabilité <a href="https://culturemath.ens.fr/thematiques/didactique/construire-la-fonction-exponentielle-en-premiere">https://culturemath.ens.fr/thematiques/didactique/construire-la-fonction-exponentielle-en-premiere</a></li>
+</ul>
+<p><em>Déniché sur le compte Twitter de <a href="http://www.stevenstrogatz.com/">http://www.stevenstrogatz.com/</a></em> </p>
+<p><img alt="cheval de Troie" src="../GrandOral/images/troie.jpeg" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+    <script src="../../js/ide.js"></script> 
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Retour en haut de la page
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Sous licence CC BY-NC-SA 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:admin@frederic-junier.org" target="_blank" rel="noopener" title="Mail" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/parc-nsi/parcmaths" target="_blank" rel="noopener" title="Dépôt git" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://lyceeduparc.fr/ldp/" target="_blank" rel="noopener" title="Lycée du Parc" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M337.8 5.4c-10.8-7.2-24.8-7.2-35.6 0L166.3 96H48c-26.5 0-48 21.5-48 48v320c0 26.5 21.5 48 48 48h208v-96c0-35.3 28.7-64 64-64s64 28.7 64 64v96h208c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7L337.8 5.4zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-64zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-64zM232 176a88 88 0 1 1 176 0 88 88 0 1 1-176 0zm88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-16v-16c0-8.8-7.2-16-16-16z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.expand", "navigation.top", "toc.integrate", "header.autohide", "navigation.tabs.sticky", "navigation.sections"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e1c3ead8.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="../../javascripts/interpreter.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
